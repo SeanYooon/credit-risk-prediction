@@ -42,7 +42,7 @@ It predicts loan default, transforms outputs into FICO-style 300–850 credit sc
 
 | Performance Dashboard                             | Model Interpretability          |
 |-------------------------------------------------------|--------------------------------------------|
-|![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/credit-shap.png) |
+|![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](credit-shap.png) |
 
 
 ## 🏦 Banking & Regulatory Context
