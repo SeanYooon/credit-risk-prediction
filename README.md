@@ -1,54 +1,82 @@
-# Credit Risk Prediction & Scoring Framework
+# Credit Risk Prediction & Scoring (Banking-Grade ML Pipeline)
 
-## 📊 Project Overview  
-End-to-end machine-learning pipeline that predicts loan default, converts probabilities to **FICO-style 300-850 scores**, applies the **5 Cs of Credit** rules, and quantifies business impact (≈ \$15.6 M loss prevented).
+## 📚 Overview
 
-*Built for banking‐grade deployment & model interpretability.*
-
----
-
-## 🔧 Tools & Techniques  
-| Area | Stack | Highlights |
-|------|-------|-----------|
-| Data Prep | `pandas`, `scikit-learn` | One-hot encoding, SMOTE balancing |
-| Modeling | `XGBoost`, `RandomizedSearchCV` | 0.94 AUC (CV) |
-| Scoring | NumPy | PDO log-odds scorecard (300-850) |
-| Interpretability | `shap` | Feature importance & waterfall plots |
-| Business Rules | Custom Python | 5 Cs assessment, approval tiers |
-| Reporting | Markdown, Matplotlib | Executive-ready visuals |
+This project is an end-to-end credit risk analytics pipeline built for banking applications.  
+It predicts loan default, transforms outputs into FICO-style 300–850 credit scores, applies the 5 Cs of Credit assessment, and quantifies business impact (e.g., \$15.6M loss prevented).  
+**Key features:** regulatory-ready interpretability (SHAP), business rule integration, and professional-grade performance reporting.
 
 ---
 
-## 🧠 Key Steps  
+## 🛠️ Tools & Libraries
 
-1. **EDA & Data Quality**  
-   * Outlier removal, missing-value imputation  
-2. **Feature Engineering**  
-   * Debt-to-income bands, home-ownership flag  
-3. **Model Development**  
-   * Hyper-parameter tuning → 93 % AUC (hold-out)  
-4. **Credit Scoring**  
-   * Log-odds transformation → FICO-equivalent scores  
-5. **5 Cs Rule Engine**  
-   * Character, Capacity, Capital, Collateral, Conditions  
-6. **Business Impact**  
-   * 💸 \$15.6 M default losses prevented (TP ≈ 76 %)  
-7. **Explainability**  
-   * SHAP: housing status & loan grade = top drivers  
+- **Python** (pandas, numpy, scikit-learn, XGBoost, imblearn)
+- **Visualization:** matplotlib, seaborn, SHAP
+- **Notebook:** Jupyter
 
 ---
 
-## ✅ Results  
+## 🧩 Process
 
-| Metric | Value |
-|--------|-------|
-| Hold-out AUC | **0.937** |
-| Precision | 0.82 |
-| Recall | 0.76 |
-| Loss Prevented | \$15.6 M |
-| Approval Automation | 85 % of applications |
+1. **Exploratory Data Analysis (EDA)**
+   - Outlier detection, missing value imputation, feature-target relationships
+2. **Feature Engineering**
+   - Debt-to-income ratio, home ownership flags, employment length
+3. **Model Development**
+   - XGBoost with hyperparameter tuning (RandomizedSearchCV)
+   - SMOTE for class imbalance
+4. **Credit Scoring**
+   - Logistic scorecard transformation (PDO=50, base odds=1:9, 300–850 scale)
+5. **5 Cs of Credit Assessment**
+   - Character, Capacity, Capital, Collateral, Conditions
+6. **Interpretability**
+   - SHAP feature importance and individual prediction explanations
+7. **Performance Reporting**
+   - ROC, PR curve, confusion matrix, business impact summary
 
 ---
 
-## 📂 Repository Structure  
+## 📊 Key Results
+
+- **Hold-out AUC:** 0.937 (exceeds industry standard)
+- **Default Detection Rate:** 76.4%
+- **Loss Prevented:** \$15.6M (portfolio estimate)
+- **Approval Automation:** 85%
+- **Top Risk Factors:** Home ownership, loan grade, DTI, income, loan purpose
+
+---
+
+## 📈 Visualizations
+
+### Model Performance & Business Relevance
+
+![Performance Dashboard](images/performance_dashboard.png)
+*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*
+
+### Model Interpretability
+
+![SHAP Top 5 Features](images/shap_top5_importance.png)
+*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*
+
+---
+
+## 🏦 Banking & Regulatory Context
+
+- **FICO-Equivalent Scoring:** 300–850 scale, points-to-double-odds (PDO=50)
+- **5 Cs of Credit:** Integrated into decision logic
+- **Model Interpretability:** SHAP values for global & local explainability
+- **Regulatory Alignment:** Basel III, SR 11-7, and Fair Lending (ECOA) principles followed
+- **Business Impact:** Quantified loss prevention, approval automation, and risk tiering
+
+---
+
+## 💡 Business Impact Summary
+
+- **Loss Prevention:** \$15.6M in prevented defaults (estimate)
+- **Detection Rate:** 76.4% of defaults identified
+- **Approval Automation:** 85% of applications processed automatically
+
+---
+
+## 📂 Structure
 
