@@ -6,15 +6,11 @@ This project is an end-to-end credit risk analytics pipeline built for banking a
 It predicts loan default, transforms outputs into FICO-style 300–850 credit scores, applies the 5 Cs of Credit assessment, and quantifies business impact (e.g., \$15.6M loss prevented).  
 **Key features:** regulatory-ready interpretability (SHAP), business rule integration, and professional-grade performance reporting.
 
----
-
 ## 🛠️ Tools & Libraries
 
 - **Python** (pandas, numpy, scikit-learn, XGBoost, imblearn)
 - **Visualization:** matplotlib, seaborn, SHAP
 - **Notebook:** Jupyter
-
----
 
 ## 🧩 Process
 
@@ -34,8 +30,6 @@ It predicts loan default, transforms outputs into FICO-style 300–850 credit sc
 7. **Performance Reporting**
    - ROC, PR curve, confusion matrix, business impact summary
 
----
-
 ## 📊 Key Results
 
 - **Hold-out AUC:** 0.937 (exceeds industry standard)
@@ -44,21 +38,12 @@ It predicts loan default, transforms outputs into FICO-style 300–850 credit sc
 - **Approval Automation:** 85%
 - **Top Risk Factors:** Home ownership, loan grade, DTI, income, loan purpose
 
----
-
 ## 📈 Visualizations
 
-### Model Performance & Business Relevance
+| Performance Dashboard                             | Model Interpretability          |
+|-------------------------------------------------------|--------------------------------------------|
+|![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/roas_model_analysis.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/actual_vs_predicted_roas.png) |
 
-![Performance Dashboard](images/performance_dashboard.png)
-*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*
-
-### Model Interpretability
-
-![SHAP Top 5 Features](images/shap_top5_importance.png)
-*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*
-
----
 
 ## 🏦 Banking & Regulatory Context
 
