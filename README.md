@@ -53,7 +53,6 @@ It predicts loan default, transforms outputs into FICO-style 300–850 credit sc
 - **Regulatory Alignment:** Basel III, SR 11-7, and Fair Lending (ECOA) principles followed
 - **Business Impact:** Quantified loss prevention, approval automation, and risk tiering
 
----
 
 ## 💡 Business Impact Summary
 
@@ -61,7 +60,10 @@ It predicts loan default, transforms outputs into FICO-style 300–850 credit sc
 - **Detection Rate:** 76.4% of defaults identified
 - **Approval Automation:** 85% of applications processed automatically
 
----
 
-## 📂 Structure
+## 📖 Source
 
+- [Kaggle: Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
+
+
+## 🔗 [Return to Main Portfolio](https://github.com/SeanYooon/Data-Analysis-Portfolio-)
